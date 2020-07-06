@@ -1,0 +1,38 @@
+/* reset completo importado desde reset.css que mantenemos en la carpeta CSS */
+@import url(reset.css);
+
+/* google fonts handlee 400, montserrat 400 y 700 */
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
+
+/* iconos */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"        );
+
+/* reset de estilos en todos los navegadores */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+/* estilos genericos de la web de texto y colores */
+:root {
+    --color-principal: #fa573a;
+    --color-secundario: #21242e;
+    --fuenteprincipal: "montserrat", sans-serif;
+    --fuentesecundaria: "handlee", cursiva;
+}
+
+/* tamaño y fuente generica */
+body {
+    font-family: var(--fuenteprincipal);
+    font-size: 1em;
+}
+
+/* configuracion de imagenes, 100% de su contenedor, altura auto y en bloque */
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
