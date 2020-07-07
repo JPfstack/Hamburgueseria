@@ -1,13 +1,15 @@
+/* ***RESETS Y HOJAS DE ESTILO IMPORTADAS*** */
+
 /* reset completo importado desde reset.css que mantenemos en la carpeta CSS */
 @import url(reset.css);
 
 /* google fonts handlee 400, montserrat 400 y 700 */
 @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
 
-/* iconos */
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"        );
+/* iconos de fontawesome */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css");
 
-/* reset de estilos en todos los navegadores */
+/* border box en todos los navegadores */
 * {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -16,12 +18,17 @@
     -ms-box-sizing: border-box;
 }
 
-/* estilos genericos de la web de texto y colores */
+/* ---FIN RESETS Y HOJAS DE ESTILO IMPORTADAS--- */
+
+/* ***ESTILO GENERAL DE LA WEB*** */
+
+/* estilos genericos de la web de texto, colores y ancho, para poder cambiar toda la web en una unica linea mediante variables */
 :root {
     --color-principal: #fa573a;
     --color-secundario: #21242e;
     --fuenteprincipal: "montserrat", sans-serif;
     --fuentesecundaria: "handlee", cursiva;
+    --anchoMaximo: 1100px;
 }
 
 /* tamaño y fuente generica */
@@ -30,9 +37,161 @@ body {
     font-size: 1em;
 }
 
-/* configuracion de imagenes, 100% de su contenedor, altura auto y en bloque */
+/* configuracion de imagenes, 100% de su contenedor, altura auto y en bloque; para que todas las imagenes ocupen la totalidad del contenedor */
 img {
     width: 100%;
     height: auto;
     display: block;
+}
+
+/* para mantener el mismo ancho en toda la web, utilizando la variable creada en root */
+.container {
+    max-width: var(--anchoMaximo);
+    margin: 0 auto;
+}
+
+/* incluimos una class flex para poder aplicar display flex donde lo necesitemos */
+.flex {
+    display: flex;
+}
+
+/* ---FIN ESTILO GENERAL DE LA WEB--- */
+
+/* ***INICIO HEADER*** */ 
+
+/* color y aire del nav_top */
+header .nav_top {
+    background-color: var(--color-secundario);
+    padding: 20px 10px;
+}
+
+/* color y estilo de los enlaces del nav_top */
+header .nav_top a {
+    color:  white;
+    text-decoration: none;
+    font-size: 120%;
+} 
+
+/* hacemos que desaparezca el texto en el header, modificandolo con media queries segun el tamaño */
+header .nav_top a span {
+    display: none;
+}
+
+/* hacemos que los iconos del header se repartan el espacio, utilizando display flex unicamente a ese elemento */
+header .nav_top .flex {
+    justify-content: space-between;
+}
+
+/* color de los iconos del nav_top */
+header .nav_top i{
+    color: var(--color-principal);
+}
+
+/* aire de los enlaces */
+header nav {
+    padding: 20px;
+}
+
+/* tamaño del logo */
+header .logo {
+    max-width: 110px;
+}
+
+/* estilo del menu desplagable, con cursor pointer hacemos que todo el espacio sea clicable */
+header .hamburguesa {
+    width: 50px;
+    cursor: pointer;
+}
+
+/* dibujamos las rallas de la hamburguesa con los tres divs que tenemos en HTML */
+header .hamburguesa div {
+    border-top: 2px solid grey;
+    margin: 10px;
+}
+
+/* aplicamos display flex en nav, de forma que el logo, la hamburguesa y los items funcionen como flex. con wrap y un tamaño de los items del 100% hacemos que los items tengan que bajar de linea, con space between hacemos que el logo y la hamburguesa se coloquen en cada lado */
+header nav .flex {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header nav ul {
+    width: 100%;
+}
+
+/* diseño de los items, en bloque para que toda la zona sea clicable, alineado al centro, sin decoracion y con padding y borde inferior y transicion cuando pasamos el raton */
+header nav ul li a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    border-bottom: 1px solid grey;
+    color: grey;
+    transition: 1s;
+}
+
+/* para que el item 1 se quede con color al igual que en el ejemplo */
+header nav ul li .activo {
+    color: var(--color-principal);
+}
+
+/* para que varie el color cuando pasamos el raton encima del enlace */
+header nav ul li a:hover {
+    color: var(--color-principal);
+}
+
+/* ---FIN HEADER--- */
+
+/* ***INICIO FOOTER*** */ 
+
+/* estilo del footer, color, padding, etc */
+footer {
+    background-color: var(--color-secundario);
+    padding: 1.25em 0.625em;
+    text-align: center;
+}
+
+/* color de p y a en blanco, si se pone directamente en footer los enlaces no tomarian el color */
+footer p , footer a {
+    color:white;
+}
+
+/* igual que el ejemplo, al pasar el puntero que desaparezca el subrayado del enlace */
+footer a:hover {
+    text-decoration: none;
+}
+/* ---FIN FOOTER--- */
+
+
+/* ***MEDIA QUERIES DE HEADER Y FOOTER*** */
+
+/* incluimos el texto del nav_top cuando se supera esta medida y en el footer se alinea a la izquierda */
+@media(min-width: 48.000em) {
+        header .nav_top a span {
+            display: inline;
+        }
+
+        footer {
+            text-align: left;
+        }
+}
+
+/* eliminamos la hamburguesa y ponemos los items en horizontal */
+@media(min-width: 62.750em) {
+    header .hamburguesa {
+       display: none;
+    }
+
+    header nav ul {
+        width: auto;
+        display: flex;
+
+    }
+
+    header nav ul li a {
+        padding: 5px 20px;
+        border-bottom: 0px;
+
+    }
+    
 }
