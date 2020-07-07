@@ -342,7 +342,7 @@ main #ourservices .flex article div i {
 
 /* dar la vuelta al icono del camion para que coincida con el ejemplo */
 main #ourservices .flex article div .fa-truck {
-    transform: rotateY(180deg);
+    transform: rotateY              (180deg);
     }
 
 /* estilo del titulo de los articulos */
@@ -360,7 +360,13 @@ main #ourservices .flex article h3 {
 
 }
 
+/* inicio de la segunda seccion ABOUT US */
+
+
+
 /* *** INICIO MEDIA QUERIES DE MAIN*** */
+
+/* el width 100% es para que el tercer articulo ocupe todo el ancho en esta medida */
 @media(min-width:48.000em) {
     main #ourservices .flex article {
         width: 50%;
@@ -369,6 +375,7 @@ main #ourservices .flex article h3 {
         border-left: 1px solid grey;
         margin-bottom: 1em;
     }
+
 
     main #ourservices .flex article:last-child {
         width: 100%;
