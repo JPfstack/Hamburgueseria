@@ -215,7 +215,7 @@ Al incluir imagen y color se pueden combinar entre ambos mediante background ble
 /* flex en hero para colocar los elementos dentro de la imagen, con with 100% los elementos se colocan centrados verticalmente */
 .hero .container {
     width: 90%;
-}}
+}
 
 /* damos estilo a los elementos h1, h2 y p dentro del hero */
 .hero h1 {
@@ -272,3 +272,13 @@ Al incluir imagen y color se pueden combinar entre ambos mediante background ble
     color: white;
     text-decoration: none;
 }
+/* ---FIN HERO--- */
+
+/* ***INICIO MAIN *** */
+
+/* incluimos un margin abajo para que no se quede cortado el texto de los articulos */
+main {
+    margin-bottom: 90px;
+}
+
+/* ---FIN MAIN--- */
