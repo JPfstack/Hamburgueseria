@@ -163,7 +163,7 @@ footer a:hover {
 /* ---FIN FOOTER--- */
 
 
-/* ***MEDIA QUERIES DE HEADER Y FOOTER*** */
+/* *** INICIO MEDIA QUERIES DE HEADER Y FOOTER*** */
 
 /* incluimos el texto del nav_top cuando se supera esta medida y en el footer se alinea a la izquierda */
 @media(min-width: 48.000em) {
@@ -195,6 +195,8 @@ footer a:hover {
     }
     
 }
+
+/* ---FIN MEDIA QUERIES DE HEADER Y FOOTER--- */
 
 /* ***INICIO HERO*** */
 
@@ -280,5 +282,108 @@ Al incluir imagen y color se pueden combinar entre ambos mediante background ble
 main {
     margin-bottom: 90px;
 }
+
+/* para meter separacion en los elementos, usar padding o margin depende de si queremos mantener el color de fondo, aunque normalmente es mejor usar padding */ 
+main section {
+    padding: 2.125em 0;
+}
+
+/* estilo de los h2 del main */
+main section h2 {
+    color: black;
+    font-family: var(--fuentesecundaria);
+    font-size: 2em;
+    text-align: center;
+}
+
+/* color de la palabra services */
+main section h2 span {
+    color: var(--color-principal);
+}
+
+/* estilo de la linea con la X cruzada */
+main section .underline {
+    position: relative;
+    width: 5em;
+    margin: 0 auto;
+    color: var(--color-principal);
+    font-weight: bold;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+main section .underline hr {
+    border-color: var(--color-principal);
+    position: absolute;
+    width: 100%;
+    top: -0.063em;
+}
+
+/* estilo de los articulos */
+main #ourservices .flex {
+    flex-wrap: wrap;
+    padding: 0 0.825em;
+}
+
+main #ourservices .flex article {
+    width: 100%;
+    padding: 1.825em 0;
+    border-bottom: 1px solid lightgrey;
+
+}
+
+/* diseño de los iconos */
+main #ourservices .flex article div i {
+    color: var(--color-principal);
+    font-size: 2em;
+    padding: 0.5em;
+    border: 2px solid var(--color-principal);
+}
+
+/* dar la vuelta al icono del camion para que coincida con el ejemplo */
+main #ourservices .flex article div .fa-truck {
+    transform: rotateY(180deg);
+    }
+
+/* estilo del titulo de los articulos */
+main #ourservices .flex article h3 {
+    font-weight: 700;
+    margin: 1em 0;
+}
+
+/* estilo del enlace leer mas */
+.enlace {
+    text-decoration: none;
+    margin-top: 1em;
+    display: block;
+    color: var(--color-principal);
+
+}
+
+/* *** INICIO MEDIA QUERIES DE MAIN*** */
+@media(min-width:48.000em) {
+    main #ourservices .flex article {
+        width: 50%;
+        padding: 1.825em;
+        border-bottom: 0px;
+        border-left: 1px solid grey;
+        margin-bottom: 1em;
+    }
+
+    main #ourservices .flex article:last-child {
+        width: 100%;
+    }
+}
+
+@media(min-width:62.750em) {
+    main #ourservices .flex article {
+        width: 33.33%;
+    }
+    main #ourservices .flex article:last-child {
+        width: 33.33%;
+    }
+}
+
+/* ---FIN MEDIA QUERIES DEL MAIN--- */
 
 /* ---FIN MAIN--- */
