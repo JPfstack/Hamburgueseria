@@ -445,3 +445,68 @@ main #aboutus .columna:hover .marco , main #aboutus .columna:hover img {
 /* ---FIN MEDIA QUERIES DEL MAIN--- */
 
 /* ---FIN MAIN--- */
+
+/* ***INICIO MAIN BLOG*** */ 
+
+main .flex article {
+    width: 100%;
+    padding: 1.825em 1em; 
+    position: relative;
+ 
+
+}
+
+main .flex article h2 {
+    font-family: var(--fuenteprincipal);
+    font-size: 1.3em;
+    text-align: left;
+    padding: 1em;
+}
+
+main .flex article h3 {
+    color: var(--color-principal);
+    font-weight: 700;
+    padding: 0 0 1em 1.3em;
+}
+
+main .flex article p {
+    padding: 0 1.3em 1em 1.3em;
+}
+
+.enblog{
+    padding: 1em 0em 0 1.3em;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--color-principal);
+}
+
+main section .cuadrado {
+    width: 80px;
+    height: 80px;
+    background-color: var(--color-principal);
+    position: absolute;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1em;
+    color: white;
+    background-blend-mode: hard-light;
+}
+
+/* ---FIN MAIN BLOG--- */
+
+/* ***INICIO MEDIA QUERIES BLOG*** */
+
+@media(max-width: 48.000em) {
+   
+    main section article:last-child {
+        display: none;
+    }
+    .enblog{
+        padding: 3em 0em 0 1.3em;
+       
+    }
+}
+
+/* ---FIN MEDIA QUERIES BLOG--- */
