@@ -445,3 +445,92 @@ main #aboutus .columna:hover .marco , main #aboutus .columna:hover img {
 /* ---FIN MEDIA QUERIES DEL MAIN--- */
 
 /* ---FIN MAIN--- */
+
+/* ***INICIO MAIN MENU*** */
+
+main section nav {
+    width: 30%;
+    padding-right: 3em;
+
+}
+
+main section nav #act {
+    background-color: var(--color-principal);
+    border-radius: 4px;
+
+}
+main section nav h4 {
+    padding: 1em;
+    font-size: 0.9em;
+}
+
+main section nav div:last-child {
+    color:white;
+    margin-top: 5em;
+    font-size: 0.9em;
+}
+
+.lineamenu {
+    width: 20%;
+    border-color: var(--color-principal);
+    margin-left: 0;
+}
+
+main section nav div h3 {
+    font-weight: bold;
+}
+
+article {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 3em;
+    margin-left: 5em;
+
+}
+
+article div:first-child {
+    width: 20%;
+
+    
+}
+
+.article div:last-child h2 {
+    font-family: var(--fuenteprincipal);
+    font-size: 1.2em;
+}
+
+.textomenu h2 {
+    font-family: var(--fuenteprincipal);
+    font-size: 1em;
+    padding-bottom: 0.5em;
+    font-weight: bold;
+    color: white;
+   
+}
+
+.textomenu h2, .textomenu p, .textomenu a {
+    margin-left:1.5em;
+    text-align: left;
+
+} 
+
+.textomenu p {
+    font-size: 0.9em;
+    
+}
+
+.precio {
+    color: var(--color-principal);
+    font-weight: bold;
+    margin-left: 2em;
+}
+
+#menucentral {
+    background-color: var(--color-secundario);
+    color: white;
+}
+
+#today {
+    color: white;
+}
+/* ---FIN MAIN MENU--- */
