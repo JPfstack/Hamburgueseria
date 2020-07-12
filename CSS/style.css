@@ -131,9 +131,9 @@ header nav ul li a{
 }
 
 /* para que el item 1 se quede con color al igual que en el ejemplo */
-header nav ul li .activo {
+/* header nav ul li .activo {
     color: var(--color-principal);
-}
+} */
 
 /* para que varie el color cuando pasamos el raton encima del enlace */
 header nav ul li a:hover {
@@ -344,7 +344,7 @@ main #ourservices .flex article div i {
 
 /* dar la vuelta al icono del camion para que coincida con el ejemplo */
 main #ourservices .flex article div .fa-truck {
-    transform: rotateY              (180deg);
+    transform: rotateY      (180deg);
     }
 
 /* estilo del titulo de los articulos */
@@ -510,3 +510,161 @@ main section .cuadrado {
 }
 
 /* ---FIN MEDIA QUERIES BLOG--- */
+/* ***INICIO MAIN MENU*** */
+
+main section nav {
+    width: 30%;
+    padding-right: 3em;
+
+}
+
+.act {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.6em;
+    
+}
+
+a.act:hover {
+    background-color: var(--color-principal);
+    border-radius: 4px;
+}
+
+.lineamenu {
+    width: 25%;
+    border-color: var(--color-principal);
+    margin-left: 0;
+}
+
+main section nav div h3 {
+    font-weight: bold;
+    margin-top: 3em;
+}
+
+article {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 3em;
+    margin-left: 5em;
+
+   
+}
+article div:first-child {
+    width: 20%;
+}
+
+
+.textomenu h2 {
+    font-family: var(--fuenteprincipal);
+    font-size: 1em;
+    padding-bottom: 0.5em;
+    font-weight: bold;
+    color: white;
+   
+}
+
+
+.textomenu h2 , p, a {
+    font-family: var(--fuenteprincipal);
+    width: 100%;
+
+    margin-left: 1.5em;
+    text-align: left;
+}
+
+
+
+.textomenu {
+    width: 80%;
+   
+} 
+
+.precio {
+    color: var(--color-principal);
+    font-weight: bold;
+    margin-left: 2em;
+}
+
+#menucentral {
+    background-color: var(--color-secundario);
+    color: white;
+}
+
+#today {
+    color: white;
+}
+
+/* ***INICIO MEDIA QUERIES DEL MENU*** */
+
+@media(max-width:48.000em) {
+  
+    main section div div.flex {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    main section nav {
+        width: 100%;
+      
+        margin: 0 auto;
+    }
+
+    a.act:hover {
+        background-color: var(--color-principal);
+        border-radius: 4px;
+        width: 100%;
+    }
+
+    .act {
+        width: 100%;
+        text-align: left;
+    
+    }
+
+    h3.act {
+
+        margin-top: 1em;
+        padding-left: 1.2em;
+    }
+
+    .lineamenu {
+        width: 12%;
+        margin: 1.2em;
+       
+    }
+
+    article {
+        flex-direction: column;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    article div:first-child {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .textomenu {
+        width: 85%;
+        margin: 1em auto 2em auto;
+        text-align: left;
+        padding-left: 0;
+
+    }
+
+    .precio {
+        position: absolute;
+        right: 75px;
+         bottom: 87px;
+     
+ 
+    }
+
+    .todaysmenu {
+        margin-top: 1em;
+    }
+   
+    
+}
+/* ---FIN MAIN MENU--- */

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Hamburguesería</title>
+</head>
+
+<body>
+    <div class="wraper">
+
+        <header>
+
+            <!-- menu superior que ocupa todo el header -->
+            <div class="nav_top">
+
+                <!-- menu interno del menu superior donde se incluyen email, telf, etc -->
+                <div class="container flex">
+                    <div>
+                        <a href="">
+                            <i class="fas fa-envelope"></i>
+                            <span>rovers@gmail.com</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <i class="fas fa-phone"></i>
+                            <span>91 456 78 95</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Shoping cart</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <i class="fas fa-user-circle"></i>
+                            <span>Account</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- menu interno del menu superior donde se inlcuye el logo y los enlaces -->
+            <nav>
+                <div class="container flex">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.jpg" alt="Rovers">
+                        </a>
+                    </div>
+
+                    <!-- "hamburguesa" de menu desplegable -->
+                    <div class="hamburguesa">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <!-- enlaces -->
+                    <ul>
+                        <li><a href="index.html" class="activo">Inicio</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main id="menucentral">
+            <section>
+                <div class="container">
+                    <h2 id="today">Today's <span>Menu</span></h2>
+                    <div class="underline">
+                        <hr noshade="noshade">
+                        <span>X</span>
+                    </div>
+                    <div class="flex">
+                        <nav class="navegacion">
+                            <div>
+                                <a class="act" href="">Breakfast</a>
+                                <a class="act" href="">Lunch</a>
+                                <a class="act" href="">Dinner</a>
+                                <a class="act" href="">Others</a>
+                            </div>
+                            <div>
+                                <h3 class="act">Today's Hot Offers</h3>
+                                <hr class="lineamenu" noshade="noshade">
+                                <p class="act">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus qui
+                                    vel eum nisi,
+                                    dolore laudantium?</p>
+                            </div>
+                        </nav>
+                        <div class="todaysmenu">
+                            <article>
+                                <div><img src="images/t1.jpg" alt=""></div>
+                                <div class="textomenu">
+
+                                    <h2>Chicken Burguer With Cheese and Butter</h2>
+                                    <p>Vegetable and chicken burguer with extra butter</p>
+                                    <a href="" class="enlace">Order Now <i class="fas fa-long-arrow-alt-right"></i></a>
+
+                                </div>
+                                <div class="precio">$95</div>
+
+
+
+                            </article>
+                            <article>
+                                <div><img src="images/t4.jpg" alt=""></div>
+                                <div class="textomenu">
+                                    <h2>Coffee and Tea with Milk and Chocolate</h2>
+                                    <p>Vegetable and chicken burguer with extra butter</p>
+                                    <a href="" class="enlace">Order Now <i class="fas fa-long-arrow-alt-right"></i></a>
+                                </div>
+                                <div class="precio">$30</div>
+                            </article>
+                            <article>
+                                <div><img src="images/t3.jpg" alt=""></div>
+                                <div class="textomenu">
+                                    <h2>Hot Pizza With Extra Cheese and Butter</h2>
+                                    <p>Vegetable and chicken burguer with extra butter</p>
+                                    <a href="" class="enlace">Order Now <i class="fas fa-long-arrow-alt-right"></i></a>
+                                </div>
+                                <div class="precio">$65</div>
+                            </article>
+
+
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </section>
+        </main>
+
+
+        <footer>
+            <!-- se incluye dentro de class "container" porque tiene el mismo ancho, para darle estilo conjuntamente -->
+            <div class="container">
+                <p>Copyright &copy; 2020 - <a href="">Aviso Legal</a> - <a href="">Cookies</a></p>
+            </div>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
