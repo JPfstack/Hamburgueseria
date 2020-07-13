@@ -538,7 +538,7 @@ main section nav div h3.act {
   
     main section div div.flex {
         flex-direction: column;
-        margin 0 auto;
+        margin: 0 auto;
     }
 
     main section nav.navegacion {
@@ -605,5 +605,5 @@ main section nav div h3.act {
     }
    
     
-
+}
 /* ---FIN MAIN MENU--- */
