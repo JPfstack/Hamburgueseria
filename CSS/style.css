@@ -448,28 +448,28 @@ main #aboutus .columna:hover .marco , main #aboutus .columna:hover img {
 
 /* ***INICIO MAIN BLOG*** */ 
 
-main .flex article {
+ main .flex article.blogart {
     width: 100%;
     padding: 1.825em 1em; 
     position: relative;
  
 
-}
+} 
 
-main .flex article h2 {
+main .flex article.blogart h2 {
     font-family: var(--fuenteprincipal);
     font-size: 1.3em;
     text-align: left;
     padding: 1em;
 }
 
-main .flex article h3 {
+main .flex article.blogart h3 {
     color: var(--color-principal);
     font-weight: 700;
     padding: 0 0 1em 1.3em;
 }
 
-main .flex article p {
+main .flex article.blogart p {
     padding: 0 1.3em 1em 1.3em;
 }
 
