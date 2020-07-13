@@ -246,6 +246,7 @@ Al incluir imagen y color se pueden combinar entre ambos mediante background ble
     text-decoration: none;
     margin: 1em 0;
     border: 1px solid var(--color-principal);
+    width: 22%;
 }
 
 /* diseño del boton cuando pasamos raton por encima, modificando fondo, color de texto y transiciones */
@@ -447,12 +448,11 @@ main #aboutus .columna:hover .marco , main #aboutus .columna:hover img {
 /* ---FIN MAIN--- */
 
 /* ***INICIO MAIN MENU*** */
-
-main section nav {
+ main section nav.navegacion {
     width: 30%;
     padding-right: 3em;
 
-}
+} 
 
 .act {
     display: block;
@@ -473,23 +473,24 @@ a.act:hover {
     margin-left: 0;
 }
 
-main section nav div h3 {
+main section nav div h3.act {
     font-weight: bold;
     margin-top: 3em;
 }
 
-article {
+.todaysmenu article {
     display: flex;
     flex-wrap: nowrap;
     margin-bottom: 3em;
     margin-left: 5em;
 
    
-}
-article div:first-child {
+} 
+
+.todaysmenu article div:first-child {
     width: 20%;
 }
-
+ 
 
 .textomenu h2 {
     font-family: var(--fuenteprincipal);
@@ -540,7 +541,7 @@ article div:first-child {
         margin 0 auto;
     }
 
-    main section nav {
+    main section nav.navegacion {
         width: 100%;
       
         margin: 0 auto;
@@ -570,13 +571,13 @@ article div:first-child {
        
     }
 
-    article {
+    .todaysmenu article {
         flex-direction: column;
         margin: 0 auto;
         position: relative;
     }
 
-    article div:first-child {
+    .todaysmenu article div:first-child {
         width: 85%;
    
         margin: 0 auto;
@@ -593,7 +594,7 @@ article div:first-child {
 
     .precio {
         position: absolute;
-       right: 75px;
+       right: 45px;
        bottom: 87px;
      
  
