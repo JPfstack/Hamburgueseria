@@ -216,7 +216,7 @@ Al incluir imagen y color se pueden combinar entre ambos mediante background ble
 
 /* flex en hero para colocar los elementos dentro de la imagen, con with 100% los elementos se colocan centrados verticalmente */
 .hero .container {
-    width: 90%;
+    width: 100%;
 }
 
 /* damos estilo a los elementos h1, h2 y p dentro del hero */
@@ -230,11 +230,14 @@ Al incluir imagen y color se pueden combinar entre ambos mediante background ble
     color: var(--color-principal);
     font-size: 1.5em;
     margin: 1em 0;
+  
 }
 
 .hero p {
     font-size: 1.15em;
     color: white;
+
+   margin:0;
 }
 
 /* diseño del boton, hacemos una clase para usarla en todos los botones de la web */
@@ -242,11 +245,11 @@ Al incluir imagen y color se pueden combinar entre ambos mediante background ble
     display: inline-block;
     background-color: var(--color-principal);
     color: white;
-    padding: 1.15em;
+    padding: 1em;
     text-decoration: none;
     margin: 1em 0;
     border: 1px solid var(--color-principal);
-    width: 22%;
+    width: 15%;
 }
 
 /* diseño del boton cuando pasamos raton por encima, modificando fondo, color de texto y transiciones */
@@ -268,12 +271,16 @@ Al incluir imagen y color se pueden combinar entre ambos mediante background ble
 .hero .social li {
     display: inline-block;
     font-size: 2em;
-    margin-right: 1em;
+    text-align: left;
+  
 }
 
 .hero .social a {
+    margin: 0 .5em 0 0;
     color: white;
     text-decoration: none;
+    text-align: left;
+
 }
 /* ---FIN HERO--- */
 
